@@ -6,13 +6,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/aditya-karbhari/App_Template
+    repoURL: https://github.com/Aditya-Karbhari/App_Template
     targetRevision: HEAD
     path: charts/myservice
     helm:
       values: |
         image:
-          repository: ghcr.io/Aditya-Karbhari/myservice
+          repository: ghcr.io/aditya-karbhari/myservice
           tag: latest
   destination:
     server: https://kubernetes.default.svc
