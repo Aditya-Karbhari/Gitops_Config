@@ -4,6 +4,7 @@ metadata:
   name: myservice-dev
   namespace: argocd
 spec:
+  project: default
   source:
     repoURL: https://github.com/Aditya-Karbhari/App_Template
     targetRevision: HEAD
