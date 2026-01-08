@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Aditya-Karbhari/App_Template
+    repoURL: https://github.com/aditya-karbhari/App_Template
     targetRevision: HEAD
     path: charts/myservice
     helm:
