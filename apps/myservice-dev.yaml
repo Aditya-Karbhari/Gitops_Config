@@ -13,7 +13,7 @@ spec:
       values: |
         image:
           repository: ghcr.io/Aditya-Karbhari/myservice
-          tag: local
+          tag: latest
   destination:
     server: https://kubernetes.default.svc
     namespace: myservice-dev
