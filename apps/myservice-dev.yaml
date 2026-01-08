@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: myservice-dev
+  namespace: argocd
+spec:
+  source:
+    repoURL: https://github.com/Aditya-Karbhari/App_Template
+    targetRevision: HEAD
+    path: charts/myservice
+    helm:
+      values: |
+        image:
+          repository: ghcr.io/Aditya-Karbhari/myservice
+          tag: local
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: myservice-dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
